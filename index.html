@@ -8,13 +8,13 @@
 </head>
 <body>
 
-<header class="header">
-    <div class="header-name">
+<header class="header">      <!--header part (name, tagline, and references for page)-->
+    <div class="headerName">
         <h1>Meznah Alshubaian</h1>
         <p class="tagline">"Developing Skills, Creating Solutions."</p>
     </div>
     <nav class="nav">
-        <a href="#about">About</a>
+        <a href="#about">About</a>        <!-- for easier navigation -->
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
@@ -23,9 +23,9 @@
 
 <main>
     <!-- Profile Pic - About -->
-    <img src="assets/profile-pic.webp" alt="Profile Picture" class="profile-pic">
+    <img src="assets/profile-pic.webp" alt="Profile Picture" class="profilePic">
 
-    <section id="about" class="section">
+    <section id="about" class="section">    <!-- the About section-->
         <h2>About Me</h2>
         <p>I am a Computer Science student with a passion for coding, problem-solving,
             and building small projects to improve my skills. I enjoy exploring web development,
@@ -34,39 +34,44 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="section">
+    <section id="projects" class="section"> <!-- the Projects section -->
         <h2>Projects</h2>
-        <div class="project-card">
+        <div class="projectDesc">
             <img src="assets/event.png" alt="Project 1">
-            <h3>Event Management System Platform</h3>
-            <p class="short-desc">The Event Management System is a web and mobile platform designed to help students,
+            <h3>Event Management System Platform</h3> <!-- project 1 -->
+            <p class="shortDesc">The Event Management System is a web and mobile platform designed to help students,
                 faculty, and organizers manage university events easily.</p>
-            <p class="long-desc hidden">Users can browse upcoming
+            <p class="longDesc hidden">Users can browse upcoming
                 events, register, and receive notifications. Organizers can create events, track attendance,
                 and manage registrations.
                 The system supports secure payments for paid events and provides QR code tickets for
                 quick check-ins. Users can also rate events and contact organizers for inquiries. It includes
                 search and filter options, email notifications, and image uploads for event promotion.</p>
+
+            <!-- when this button is clicked there will be more info (handled in JS)-->
             <button onclick="toggleDescription(this)">Read More</button>
         </div>
 
-        <div class="project-card">
-            <img src="assets/HTML.jpg" alt="Project 2">
+        <div class="projectDesc">
+            <img src="assets/HTML.jpg" alt="Project 2">   <!-- project 2 -->
             <h3>Hikaya</h3>
-            <p class="short-desc">Hikaya is a web application that uses OpenAI’s API to generate personalized
+            <p class="shortDesc">Hikaya is a web application that uses OpenAI’s API to generate personalized
                 stories for children based on their preferences.</p>
-            <p class="long-desc hidden">The website allows parents to customize elements
+            <p class="longDesc hidden">The website allows parents to customize elements
                 such as the child’s name, age, favorite themes, and the moral of the story.Parents
                 can also choose cultural elements or favorite characters to make the stories feel unique.
                 The AI then creates age appropriate, engaging, and educational stories that make stories more fun and personal.</p>
+
+            <!-- when this button is clicked there will be more info (handled in JS)-->
             <button onclick="toggleDescription(this)">Read More</button>
         </div>
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="section">
+    <section id="skills" class="section">  <!-- an unordered list for some skills I have-->
+
         <h2>Skills</h2>
-        <ul class="skills-list">
+        <ul class="skillsList">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
@@ -81,17 +86,18 @@
     <!-- Contact -->
     <section id="contact" class="section">
         <h2>Contact</h2>
-        <form id="contact-form" onsubmit="submitForm(event)">
+        <!-- when the form is submitted a message will be shown to the user-->
+        <form id="contactForm" onsubmit="submitForm(event)">
             <input type="text" name="name" placeholder="Name">
             <input type="email" name="email" placeholder="Email">
             <textarea name="message" placeholder="Message"></textarea>
             <button type="submit">Send</button>
         </form>
-        <p id="form-status"></p>
+        <p id="formStatus"></p>
     </section>
 </main>
 
-<footer class="footer">
+<footer class="footer">       <!-- adding a footer that contains my name and the year -->
     <p>© <span id="year"></span> Meznah Alshubaian</p>
 </footer>
 </body>

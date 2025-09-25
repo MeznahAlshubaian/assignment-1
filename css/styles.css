@@ -1,82 +1,79 @@
-/* General Style */
+/* General style for the portfolio  */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; /* type */
     background-color: #f4f4f4;
     color: #452121;
-    margin: 0;
-    padding: 0;
+    margin: 0;   /* no space around the body and the page */
+    padding: 0;  /* no inner space */
 }
 
 /* Header */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 1rem 2rem;
-    border-bottom: 2px solid #716565;
+    display: flex;  /* for easier arranging (name and navigation)*/
+    justify-content: space-between; /* spacing between elements*/
+    align-items: center; /* aligning the navigation */
+    padding: 1rem 2rem;  /* spacing inside header*/
+    border-bottom: 2px solid #716565; /* for the line */
     background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 2px 5px rgba(0,0,0,0.05); /* shadow for better look*/
 }
 
-.header-name {
-    display: block;
-}
+.headerName h1 {   /* for the name */
 
-.header-name h1 {
-    margin: 0;
+    margin: 0;   /* no spacing */
     font-size: 2rem;
     text-align: center;
 }
 
-.header-name .tagline {
+.headerNname .tagline {  /* for the tagline*/
     font-size: 1rem;
     color: #716565;
     text-align: left;
-    margin-top: 5px;
+    margin-top: 5px;  /* spacing between name and tagline */
 }
 
 /* Navigation */
 .nav a {
     margin-left: 1rem;
-    text-decoration: none;
+    text-decoration: none;  /* without the underline */
     color: #452121;
     font-weight: 500;
 }
 
-.nav a:hover {
+.nav a:hover {  /* when the user points the mouse on the links */
     color: #716565;
 }
 
 /* Sections */
 .section {
     padding: 2rem 1rem;
-    margin: 0 auto;
+    margin: 0 auto;  /* section horizontally */
     max-width: 900px;
-    box-sizing: border-box;
-    word-wrap: break-word;
+    box-sizing: border-box; /* adding a border */
+    word-wrap: break-word; /* for different devices it does not overflow*/
 }
 
 h2 {
     margin-bottom: 1rem;
     color: #452121;
-    border-bottom: 2px solid #716565;
+    border-bottom: 2px solid #716565;  /* adding a line */
     padding-bottom: 0.3rem;
 }
 
 /* Profile Pic */
-.profile-pic {
-    border-radius: 50%;
+.profilePic {
+    border-radius: 50%; /* circular image */
     width: 120px;
     height: 120px;
     display: block;
-    margin: 2rem auto 1rem auto;
-    border: 2px solid #716565;
+    margin: 2rem auto 1rem auto;  /* centers the picture */
+    border: 2px solid #716565; /* adding a border around it */
 }
 
 /* About Section */
 #about {
     border: 1.5px solid #716565;
-    border-radius: 10px;
+    border-radius: 10px; /* for rounded corners */
     background-color: #ffffff;
     box-shadow: 0 3px 6px rgba(0,0,0,0.1);
     padding: 1.5rem;
@@ -84,90 +81,86 @@ h2 {
 }
 
 /* Projects */
-#projects img {
-    width: 180px;
-    height: 120px;
-    border-radius: 5px;
+#projects img {   /* for images in the project section */
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* rounded corners */
 }
 
-.project-card {
+.projectDesc {
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-    margin: 1rem auto;
+    margin: 1rem auto; /* spacing outside the section*/
     padding: 1rem;
-    max-width: 95%;
+    max-width: 95%;  /* not too wide */
 }
 
-.project-card h3 {
-    margin: 0.5rem 0;
+.projectDesc h3 {
+    margin: 0.5rem 0;  /* for project titles */
     color: #452121;
 }
 
-.project-card button {
+.projectDesc button {  /* styling the read more button */
     margin-top: 0.5rem;
     padding: 0.5rem 1rem;
     border: none;
     background: #716565;
     color: white;
     border-radius: 5px;
-    cursor: pointer;
 }
 
-.project-card button:hover {
+.projectDesc button:hover {
     background: #452121;
 }
 
-.hidden { display: none; }
+.hidden { display: none; }  /* hiding the additional description */
 
 /* Skills */
 #skills {
     border: 1.5px solid #716565;
     border-radius: 10px;
     background-color: #ffffff;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    box-shadow: 3px 6px rgba(0,0,0,0.1);
     padding: 1.5rem;
     text-align: left; /* align bullets to the left */
     max-width: 900px;
     margin: 1rem auto;
 }
 
-.skills-list {
-    list-style-type: disc;
+.skillsList {
     padding-left: 1.5rem;
 }
 
-.skills-list li {
+.skillsList li {    /* styling the bullets*/
     margin-bottom: 0.5rem;
     color: #452121;
     font-weight: 500;
 }
 
-
 /* Contact Form */
 form {
-    display: grid;
+    display: grid;  /* stack them in a neat way*/
     gap: 0.75rem;
 }
 
 input, textarea {
-    width: 90%;
+    width: 90%; /* not too wide */
     padding: 0.5rem;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
 
-button[type="submit"] {
+button[type="submit"] {  /* styling the send button  */
     width: 90%;
     padding: 0.5rem 1rem;
     border: none;
     background: #716565;
     color: white;
     border-radius: 5px;
-    cursor: pointer;
 }
 
-button[type="submit"]:hover {
+button[type="submit"]:hover {   /* when the user points the mouse on it */
     background: #452121;
 }
 
@@ -181,19 +174,19 @@ button[type="submit"]:hover {
 /* Responsive */
 @media (max-width: 600px) {
     .header {
-        flex-direction: column;
+        flex-direction: column;  /* making it column wise to see everything */
         gap: 0.5rem;
-        text-align: center;
+        text-align: center;  /* centering everything*/
     }
     .nav {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* making it column wise to see everything */
         gap: 0.5rem;
     }
-    #about, .project-card {
+    #about, .projectDesc {   /* resizing everything */
         padding: 1rem;
     }
-    .profile-pic {
+    .profilePic {
         width: 100px;
         height: 100px;
     }

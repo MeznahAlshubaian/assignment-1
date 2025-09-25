@@ -18,7 +18,10 @@ To run this portfolio locally, follow these steps:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/MeznahAlshubaian/assignment-1.git
+2. **Open the project folder in your editor**
 
+3. **Open index.html in your browser**
+4. **Review the portfolio and observe the behavior of the buttons and navigation bar**
 ## AI Usage Summary
  This portfolio used ChatGPT to assist in:
 - Generating the initial outline of the HTML and CSS files.
